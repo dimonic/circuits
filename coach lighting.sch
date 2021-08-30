@@ -1,0 +1,140 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Bridge_+-AA D1
+U 1 1 60DB7950
+P 2900 3950
+F 0 "D1" H 3241 3996 50  0000 L CNN
+F 1 "KBP005G-ND" H 3241 3905 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_KBPC6" H 2900 3950 50  0001 C CNN
+F 3 "~" H 2900 3950 50  0001 C CNN
+	1    2900 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 60DB7AAF
+P 3550 3350
+F 0 "R1" H 3618 3396 50  0000 L CNN
+F 1 "100K" H 3618 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 3350 50  0001 C CNN
+F 3 "~" H 3550 3350 50  0001 C CNN
+	1    3550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R2
+U 1 1 60DB7B93
+P 3550 3800
+F 0 "R2" H 3620 3846 50  0000 L CNN
+F 1 "ADA 161" H 3620 3755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3600 3550 50  0001 L CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+	1    3550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 60DB7C71
+P 4100 3550
+F 0 "Q1" H 4291 3596 50  0000 L CNN
+F 1 "BC548BU-ND" H 4291 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4300 3650 50  0001 C CNN
+F 3 "~" H 4100 3550 50  0001 C CNN
+	1    4100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 60DB7D5C
+P 3700 3150
+F 0 "R3" V 3495 3150 50  0000 C CNN
+F 1 "1K" V 3586 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 3150 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+	1    3700 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 3150 2750 3150
+Connection ~ 3550 3150
+Wire Wire Line
+	3550 3150 3600 3150
+Wire Wire Line
+	3550 3550 3900 3550
+Wire Wire Line
+	4200 3750 4200 3950
+Wire Wire Line
+	3800 3150 4350 3150
+Wire Wire Line
+	4200 3350 4200 3300
+Wire Wire Line
+	2900 3650 2900 3800
+Wire Wire Line
+	2900 4250 2400 4250
+$Comp
+L Device:CP C1
+U 1 1 612E313F
+P 3200 3550
+F 0 "C1" H 3318 3596 50  0000 L CNN
+F 1 "2700 uF" H 3318 3505 50  0000 L CNN
+F 2 "" H 3238 3400 50  0001 C CNN
+F 3 "~" H 3200 3550 50  0001 C CNN
+	1    3200 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3150
+Wire Wire Line
+	3200 3150 3550 3150
+Connection ~ 3200 3950
+Wire Wire Line
+	3200 3400 3200 3150
+Wire Wire Line
+	3200 3700 3200 3950
+$Comp
+L Device:R R4
+U 1 1 6131116D
+P 2900 3150
+F 0 "R4" V 2693 3150 50  0000 C CNN
+F 1 "330" V 2784 3150 50  0000 C CNN
+F 2 "" V 2830 3150 50  0001 C CNN
+F 3 "~" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 3150 3200 3150
+Wire Wire Line
+	4200 3300 4350 3300
+Wire Wire Line
+	2900 3650 2400 3650
+NoConn ~ 2600 3750
+Wire Wire Line
+	3550 3150 3550 3250
+Wire Wire Line
+	2600 3150 2600 3950
+Connection ~ 2900 3650
+Wire Wire Line
+	3550 3450 3550 3550
+Wire Wire Line
+	3200 3950 3550 3950
+Connection ~ 3550 3950
+Wire Wire Line
+	3550 3950 4200 3950
+Connection ~ 3550 3550
+Wire Wire Line
+	3550 3550 3550 3650
+$EndSCHEMATC
